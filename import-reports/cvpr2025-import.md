@@ -17,3 +17,4 @@ Each project is imported from its current upstream default branch as a shallow s
 - Imported: **AODRaw** from https://github.com/lzyhha/AODRaw.git; upstream commit `4c0f20c96dc6bf4fd64c9a8a5e77ba18d2bcc823`; license: CC BY-NC 4.0；需要署名，禁止商业用途
 - Imported: **cropr** from https://github.com/benbergner/cropr.git; upstream commit `fa259e9030f5fddf4721ac75cdd18561524de6f9`; license: MIT
 - Imported: **QwT** from https://github.com/wujx2001/QwT.git; upstream commit `8a927da86be764a85b7d552bcdfa937af8211f90`; license: Apache-2.0
+- Imported: **APHQ-ViT** from https://github.com/GoatWu/APHQ-ViT.git; upstream commit `84c9fde5fbdf9fc85561ab7c0898b75c8e5ec381`; license: Apache-2.0
