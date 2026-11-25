@@ -34,3 +34,4 @@ Each project is imported from its current upstream default branch as a shallow s
 - Imported: **SCSegamba** from https://github.com/Karl1109/SCSegamba.git; upstream commit `cc74c4606f03bc308b1ef1c07ef6229f9123c519`; license: Apache-2.0
 - Imported: **Dinomaly** from https://github.com/guojiajeremy/Dinomaly.git; upstream commit `1f252be03a918789b19848f0ca37166e7c28dada`; license: Apache-2.0
 - Imported: **SegMAN** from https://github.com/yunxiangfu2001/SegMAN.git; upstream commit `9ced66ab27f23b0dbc1b0a2fe0ba42e133c55ac8`; license: Apache-2.0
+- Imported: **MCADS-Decoder** from https://github.com/saadwazir/MCADS-Decoder.git; upstream commit `0bb8a7ec97e938db390def9b7e82b6e5766ea33b`; license: GPL-3.0
