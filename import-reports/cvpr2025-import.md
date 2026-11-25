@@ -38,3 +38,4 @@ Each project is imported from its current upstream default branch as a shallow s
 - Imported: **UniVAD** from https://github.com/FantasticGNU/UniVAD.git; upstream commit `64d32873dda44fad69786834ea5ee1394ef81975`; license: CC BY-NC-SA 4.0；署名、非商业、相同方式共享
 - Imported: **AA-CLIP** from https://github.com/Mwxinnn/AA-CLIP.git; upstream commit `53db195f230442aa118c246876c94ba1c76139cc`; license: Apache-2.0
 - Imported: **vCLR** from https://github.com/Visual-AI/vCLR.git; upstream commit `aa17e9fecbd108e29aef4c96eb99dba7d8328fd7`; license: MIT
+- Imported: **LPOSS** from https://github.com/vladan-stojnic/LPOSS.git; upstream commit `e489a7445528922ddfe4e39631ef2fe34827c873`; license: MIT
