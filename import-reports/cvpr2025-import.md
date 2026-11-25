@@ -30,3 +30,4 @@ Each project is imported from its current upstream default branch as a shallow s
 - Imported: **ReRAW** from https://github.com/SonyResearch/ReRAW.git; upstream commit `e2b7ba2e3a52bcac1c8dcceefdc24ecb0ad18204`; license: MIT
 - Omitted oversized file (>20 MiB): DarkIR/assets/qualis_realblur_night.jpg
 - Imported: **DarkIR** from https://github.com/cidautai/DarkIR.git; upstream commit `0910291157ad04f210481a002cf6bb480f6a7f18`; license: MIT
+- Imported: **PolarNeXt** from https://github.com/Sun15194/PolarNeXt.git; upstream commit `7b65b03a22be21779faee2a6c616b8eb5f771b4d`; license: Apache-2.0
