@@ -28,3 +28,5 @@ Each project is imported from its current upstream default branch as a shallow s
 - Imported: **GroupMamba** from https://github.com/Amshaker/GroupMamba.git; upstream commit `c1800ed262e995de3c645348e7e0202e8385f334`; license: MIT
 - Imported: **HVI-CIDNet** from https://github.com/Fediory/HVI-CIDNet.git; upstream commit `eb43d7d91e9a336c66856824ff9e4603ae41f408`; license: MIT
 - Imported: **ReRAW** from https://github.com/SonyResearch/ReRAW.git; upstream commit `e2b7ba2e3a52bcac1c8dcceefdc24ecb0ad18204`; license: MIT
+- Omitted oversized file (>20 MiB): DarkIR/assets/qualis_realblur_night.jpg
+- Imported: **DarkIR** from https://github.com/cidautai/DarkIR.git; upstream commit `0910291157ad04f210481a002cf6bb480f6a7f18`; license: MIT
