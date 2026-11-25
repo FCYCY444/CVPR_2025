@@ -52,3 +52,11 @@ Each project is imported from its current upstream default branch as a shallow s
 
 Unlicensed upstream projects are link-only in projects.csv and their individual SOURCE.md.
 External weights, large files (>20 MiB), Git LFS content, git submodules, and external datasets may not be mirrored.
+
+## Final verification summary
+
+- The two uploaded lists contained 81 references to GitHub repositories; 19 duplicate references were removed to produce 62 unique projects.
+- 39 sources with redistributable licenses were imported. 23 projects without verified redistribution rights remain link-only, with SOURCE.md records.
+- Successful GitHub Actions workflow: https://github.com/FCYCY444/CVPR_2025/actions/runs/45520598839
+- Eight files exceeding 20 MiB were omitted. See the explicit file paths above; they include demo imagery, binary CUDA modules, and pretrained model weights.
+- This is not an official GitHub Fork and does not preserve upstream Git history, Git LFS objects, external weights, or third-party datasets.
