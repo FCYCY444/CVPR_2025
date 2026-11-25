@@ -40,3 +40,4 @@ Each project is imported from its current upstream default branch as a shallow s
 - Imported: **vCLR** from https://github.com/Visual-AI/vCLR.git; upstream commit `aa17e9fecbd108e29aef4c96eb99dba7d8328fd7`; license: MIT
 - Imported: **LPOSS** from https://github.com/vladan-stojnic/LPOSS.git; upstream commit `e489a7445528922ddfe4e39631ef2fe34827c873`; license: MIT
 - Imported: **MaskAdapter** from https://github.com/hustvl/MaskAdapter.git; upstream commit `c0516d8a548d90055c3dca7f2a9b4281a4da842f`; license: Apache-2.0
+- Imported: **BHViT** from https://github.com/IMRL/BHViT.git; upstream commit `4093f5bcea5750e1548ad0b0a4e2920f6caf7cab`; license: MIT
