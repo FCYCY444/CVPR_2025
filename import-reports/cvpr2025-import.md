@@ -44,3 +44,5 @@ Each project is imported from its current upstream default branch as a shallow s
 - Imported: **AnomalyNCD** from https://github.com/HUST-SLOW/AnomalyNCD.git; upstream commit `9351c5daab246ff5db6841fde1689000d4f706f0`; license: MIT
 - Omitted oversized file (>20 MiB): cups/assets/cups_video.gif
 - Imported: **cups** from https://github.com/visinf/cups.git; upstream commit `78fc2739345eead1cf3cb9e6695be69dd7f71745`; license: Apache-2.0
+- Omitted oversized file (>20 MiB): EdgeTAM/checkpoints/edgetam.pt
+- Imported: **EdgeTAM** from https://github.com/facebookresearch/EdgeTAM.git; upstream commit `7711e012a30a2402c4eaab637bdb00a521302c91`; license: Apache-2.0
