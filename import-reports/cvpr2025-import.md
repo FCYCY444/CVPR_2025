@@ -7,3 +7,4 @@ Each project is imported from its current upstream default branch as a shallow s
 - Imported: **FDConv** from https://github.com/Linwei-Chen/FDConv.git; upstream commit `bf7a33d4f39ac7ea8172158f5628107fcaaba469`; license: MIT
 - Imported: **GCNet** from https://github.com/gyyang23/GCNet.git; upstream commit `8b4c0abf82cfe13a39ae10d8431a554fc5b3284b`; license: MIT
 - Imported: **BoltzFormer** from https://github.com/microsoft/BoltzFormer.git; upstream commit `c68c5f53f617b3d42f608401be27088df76a53ce`; license: Apache-2.0
+- Imported: **FIMA-Q** from https://github.com/ShiheWang/FIMA-Q.git; upstream commit `64c4b00a368d7cbbea635cb26bc7f3ab56fb1b26`; license: Apache-2.0
