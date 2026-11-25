@@ -14,3 +14,4 @@ Each project is imported from its current upstream default branch as a shallow s
 - Imported: **OverLoCK** from https://github.com/LMMMEng/OverLoCK.git; upstream commit `fb6f22bef264c01be737ff90e88b4c16109e249b`; license: Apache-2.0
 - Imported: **MobileMamba** from https://github.com/lewandofskee/MobileMamba.git; upstream commit `0980f48a23d232e0f2e86e740eccab038c8fd760`; license: MIT
 - Imported: **FRACAL** from https://github.com/kostas1515/FRACAL.git; upstream commit `d7db1b67686e8b70e78db9c7ccc12e442b0cacca`; license: Apache-2.0
+- Imported: **AODRaw** from https://github.com/lzyhha/AODRaw.git; upstream commit `4c0f20c96dc6bf4fd64c9a8a5e77ba18d2bcc823`; license: CC BY-NC 4.0；需要署名，禁止商业用途
