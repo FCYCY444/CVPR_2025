@@ -47,3 +47,5 @@ Each project is imported from its current upstream default branch as a shallow s
 - Omitted oversized file (>20 MiB): EdgeTAM/checkpoints/edgetam.pt
 - Imported: **EdgeTAM** from https://github.com/facebookresearch/EdgeTAM.git; upstream commit `7711e012a30a2402c4eaab637bdb00a521302c91`; license: Apache-2.0
 - Imported: **LiVOS** from https://github.com/uncbiag/LiVOS.git; upstream commit `8c26cb03f570942a0c9a26f5bf7a8d378fc9ac60`; license: MIT
+- Omitted oversized file (>20 MiB): SSP/RAFT_core/raft-things.pth-no-zip
+- Imported: **SSP** from https://github.com/FraunhoferIVI/SSP.git; upstream commit `b8dc3a4da9588323cbf78c3d74c310be7f0a0b6a`; license: CC BY-NC-SA 4.0；署名、非商业、相同方式共享
