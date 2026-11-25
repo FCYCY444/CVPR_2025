@@ -1,0 +1,130 @@
+name: Import licensed CVPR 2025 reference sources
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/import-cvpr2025-source.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: cvpr2025-individual-source-import
+  cancel-in-progress: false
+jobs:
+  import-sources:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - name: Check out CVPR 2025 source collection
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          persist-credentials: true
+      - name: Copy each permitted source tree individually without running upstream code
+        shell: bash
+        env:
+          GIT_LFS_SKIP_SMUDGE: "1"
+          GIT_TERMINAL_PROMPT: "0"
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mkdir -p import-reports
+          report="import-reports/cvpr2025-import.md"
+          if [ ! -f "$report" ]; then
+            printf '# CVPR 2025 reference-source import report\n\n' > "$report"
+            printf 'Each project is imported from its current upstream default branch as a shallow snapshot. Upstream scripts are never executed.\n\n' >> "$report"
+          fi
+          imported=0
+          failed=0
+          while IFS='|' read -r folder url license || [ -n "$folder" ]; do
+            [ -n "$folder" ] || continue
+            echo "::group::Import $folder"
+            if [ ! -f "$folder/SOURCE.md" ]; then
+              echo "Missing original source index for $folder"
+              exit 1
+            fi
+            if [ -f "$folder/LICENSE" ] || [ -f "$folder/LICENSE.md" ] || [ -f "$folder/LICENSE.txt" ] || [ -f "$folder/LICENCE" ]; then
+              echo "$folder already contains license/source snapshot; not re-copying"
+              echo "::endgroup::"
+              continue
+            fi
+            tmp="$(mktemp -d)"
+            ok=0
+            for attempt in 1 2; do
+              if git -c core.hooksPath=/dev/null clone --quiet --depth 1 --single-branch --filter=blob:none "$url" "$tmp/upstream"; then
+                ok=1
+                break
+              fi
+              rm -rf "$tmp/upstream"
+              sleep 4
+            done
+            if [ "$ok" -ne 1 ]; then
+              printf -- '- Clone failed: **%s** (%s)\n' "$folder" "$url" >> "$report"
+              failed=$((failed + 1))
+              rm -rf "$tmp"
+              echo "::endgroup::"
+              continue
+            fi
+            if ! find "$tmp/upstream" -maxdepth 1 -type f | grep -Eiq '/(LICENSE|LICENCE|COPYING)(\..*)?$'; then
+              printf -- '- Skipped: **%s**, upstream license file was not found at import time\n' "$folder" >> "$report"
+              failed=$((failed + 1))
+              rm -rf "$tmp"
+              echo "::endgroup::"
+              continue
+            fi
+            sha="$(git -C "$tmp/upstream" rev-parse HEAD)"
+            rm -rf "$tmp/upstream/.git"
+            while IFS= read -r file; do
+              [ -n "$file" ] || continue
+              rel="${file#"$tmp/upstream/"}"
+              printf -- '- Omitted oversized file (>20 MiB): %s/%s\n' "$folder" "$rel" >> "$report"
+              rm -f -- "$file"
+            done < <(find "$tmp/upstream" -type f -size +20M -print)
+            cp "$folder/SOURCE.md" "$tmp/SOURCE.md"
+            cp -a "$tmp/upstream/." "$folder/"
+            cp "$tmp/SOURCE.md" "$folder/SOURCE.md"
+            printf -- '- Imported: **%s** from %s; upstream commit `%s`; license: %s\n' "$folder" "$url" "$sha" "$license" >> "$report"
+            git add -- "$folder" "$report"
+            if ! git diff --cached --quiet; then
+              git commit --quiet -m "Import licensed CVPR 2025 source snapshot $folder"
+              pushed=0
+              for attempt in 1 2 3 4 5; do
+                if git push origin HEAD:main; then
+                  pushed=1
+                  break
+                fi
+                echo "GitHub push failed for $folder, attempt $attempt; retrying"
+                sleep "$((attempt * 8))"
+              done
+              if [ "$pushed" -ne 1 ]; then
+                echo "Failed to push $folder after retries"
+                exit 1
+              fi
+            fi
+            imported=$((imported + 1))
+            rm -rf "$tmp"
+            echo "::endgroup::"
+          done < .github/import-cvpr2025-sources.tsv
+          printf '\nUnlicensed upstream projects are link-only in projects.csv and their individual SOURCE.md.\n' >> "$report"
+          printf 'External weights, large files (>20 MiB), Git LFS content, git submodules, and external datasets may not be mirrored.\n' >> "$report"
+          git add -- "$report"
+          if ! git diff --cached --quiet; then
+            git commit --quiet -m "Finalize CVPR 2025 source import report"
+            pushed=0
+            for attempt in 1 2 3 4 5; do
+              if git push origin HEAD:main; then
+                pushed=1
+                break
+              fi
+              sleep "$((attempt * 8))"
+            done
+            if [ "$pushed" -ne 1 ]; then
+              echo "Failed to publish final report"
+              exit 1
+            fi
+          fi
+          echo "Projects imported=$imported, failures=$failed"
+          if [ "$failed" -gt 0 ]; then
+            exit 1
+          fi
