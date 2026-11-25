@@ -8,3 +8,5 @@ Each project is imported from its current upstream default branch as a shallow s
 - Imported: **GCNet** from https://github.com/gyyang23/GCNet.git; upstream commit `8b4c0abf82cfe13a39ae10d8431a554fc5b3284b`; license: MIT
 - Imported: **BoltzFormer** from https://github.com/microsoft/BoltzFormer.git; upstream commit `c68c5f53f617b3d42f608401be27088df76a53ce`; license: Apache-2.0
 - Imported: **FIMA-Q** from https://github.com/ShiheWang/FIMA-Q.git; upstream commit `64c4b00a368d7cbbea635cb26bc7f3ab56fb1b26`; license: Apache-2.0
+- Omitted oversized file (>20 MiB): DINO_Teacher/dinov1/hub/facebookresearch_dino_main/.github/dino.gif
+- Imported: **DINO_Teacher** from https://github.com/TRAILab/DINO_Teacher.git; upstream commit `44ae126c5d9844752afbd8bdfdd65c92cf713fb1`; license: Apache-2.0
