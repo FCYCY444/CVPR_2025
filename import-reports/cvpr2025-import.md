@@ -46,3 +46,4 @@ Each project is imported from its current upstream default branch as a shallow s
 - Imported: **cups** from https://github.com/visinf/cups.git; upstream commit `78fc2739345eead1cf3cb9e6695be69dd7f71745`; license: Apache-2.0
 - Omitted oversized file (>20 MiB): EdgeTAM/checkpoints/edgetam.pt
 - Imported: **EdgeTAM** from https://github.com/facebookresearch/EdgeTAM.git; upstream commit `7711e012a30a2402c4eaab637bdb00a521302c91`; license: Apache-2.0
+- Imported: **LiVOS** from https://github.com/uncbiag/LiVOS.git; upstream commit `8c26cb03f570942a0c9a26f5bf7a8d378fc9ac60`; license: MIT
