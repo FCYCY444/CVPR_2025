@@ -1,0 +1,39 @@
+GETA|https://github.com/microsoft/GETA.git|MIT
+MDP|https://github.com/NVlabs/MDP.git|Apache-2.0；README 提醒 HALP 部分仅限非商业使用
+FDConv|https://github.com/Linwei-Chen/FDConv.git|MIT
+GCNet|https://github.com/gyyang23/GCNet.git|MIT
+BoltzFormer|https://github.com/microsoft/BoltzFormer.git|Apache-2.0
+FIMA-Q|https://github.com/ShiheWang/FIMA-Q.git|Apache-2.0
+DINO_Teacher|https://github.com/TRAILab/DINO_Teacher.git|Apache-2.0
+DEIM|https://github.com/Intellindust-AI-Lab/DEIM.git|Apache-2.0
+OverLoCK|https://github.com/LMMMEng/OverLoCK.git|Apache-2.0
+MobileMamba|https://github.com/lewandofskee/MobileMamba.git|MIT
+FRACAL|https://github.com/kostas1515/FRACAL.git|Apache-2.0
+AODRaw|https://github.com/lzyhha/AODRaw.git|CC BY-NC 4.0；需要署名，禁止商业用途
+cropr|https://github.com/benbergner/cropr.git|MIT
+QwT|https://github.com/wujx2001/QwT.git|Apache-2.0
+APHQ-ViT|https://github.com/GoatWu/APHQ-ViT.git|Apache-2.0
+OWOBJ|https://github.com/AI4Math-ShanZhang/OWOBJ.git|Apache-2.0（仓库文件 LICENCE）
+SearchDet_Long_Tail_Object_Detection|https://github.com/Mankeerat/SearchDet.git|MIT
+MambaVision|https://github.com/NVlabs/MambaVision.git|NVIDIA Source Code License-NC；仅限非商业研究/评估
+MambaOut|https://github.com/yuweihao/MambaOut.git|Apache-2.0
+GroupMamba|https://github.com/Amshaker/GroupMamba.git|MIT
+HVI-CIDNet|https://github.com/Fediory/HVI-CIDNet.git|MIT
+ReRAW|https://github.com/SonyResearch/ReRAW.git|MIT
+DarkIR|https://github.com/cidautai/DarkIR.git|MIT
+PolarNeXt|https://github.com/Sun15194/PolarNeXt.git|Apache-2.0
+SCSegamba|https://github.com/Karl1109/SCSegamba.git|Apache-2.0
+Dinomaly|https://github.com/guojiajeremy/Dinomaly.git|Apache-2.0
+SegMAN|https://github.com/yunxiangfu2001/SegMAN.git|Apache-2.0
+MCADS-Decoder|https://github.com/saadwazir/MCADS-Decoder.git|GPL-3.0
+UniVAD|https://github.com/FantasticGNU/UniVAD.git|CC BY-NC-SA 4.0；署名、非商业、相同方式共享
+AA-CLIP|https://github.com/Mwxinnn/AA-CLIP.git|Apache-2.0
+vCLR|https://github.com/Visual-AI/vCLR.git|MIT
+LPOSS|https://github.com/vladan-stojnic/LPOSS.git|MIT
+MaskAdapter|https://github.com/hustvl/MaskAdapter.git|Apache-2.0
+BHViT|https://github.com/IMRL/BHViT.git|MIT
+AnomalyNCD|https://github.com/HUST-SLOW/AnomalyNCD.git|MIT
+cups|https://github.com/visinf/cups.git|Apache-2.0
+EdgeTAM|https://github.com/facebookresearch/EdgeTAM.git|Apache-2.0
+LiVOS|https://github.com/uncbiag/LiVOS.git|MIT
+SSP|https://github.com/FraunhoferIVI/SSP.git|CC BY-NC-SA 4.0；署名、非商业、相同方式共享
