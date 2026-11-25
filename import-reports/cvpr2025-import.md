@@ -42,3 +42,5 @@ Each project is imported from its current upstream default branch as a shallow s
 - Imported: **MaskAdapter** from https://github.com/hustvl/MaskAdapter.git; upstream commit `c0516d8a548d90055c3dca7f2a9b4281a4da842f`; license: Apache-2.0
 - Imported: **BHViT** from https://github.com/IMRL/BHViT.git; upstream commit `4093f5bcea5750e1548ad0b0a4e2920f6caf7cab`; license: MIT
 - Imported: **AnomalyNCD** from https://github.com/HUST-SLOW/AnomalyNCD.git; upstream commit `9351c5daab246ff5db6841fde1689000d4f706f0`; license: MIT
+- Omitted oversized file (>20 MiB): cups/assets/cups_video.gif
+- Imported: **cups** from https://github.com/visinf/cups.git; upstream commit `78fc2739345eead1cf3cb9e6695be69dd7f71745`; license: Apache-2.0
