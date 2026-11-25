@@ -22,3 +22,4 @@ Each project is imported from its current upstream default branch as a shallow s
 - Omitted oversized file (>20 MiB): SearchDet_Long_Tail_Object_Detection/resources/Architecture_of_SearchDet.png
 - Imported: **SearchDet_Long_Tail_Object_Detection** from https://github.com/Mankeerat/SearchDet.git; upstream commit `45d6ce794de647f9622fbcc05097aa1789965b51`; license: MIT
 - Imported: **MambaVision** from https://github.com/NVlabs/MambaVision.git; upstream commit `7860a506b2eb844eaaae676f08461ce8c3c26f43`; license: NVIDIA Source Code License-NC；仅限非商业研究/评估
+- Imported: **MambaOut** from https://github.com/yuweihao/MambaOut.git; upstream commit `9f2f2343eb0f99f2cf3ba6b92290b5a81be2bad1`; license: Apache-2.0
