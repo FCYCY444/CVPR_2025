@@ -36,3 +36,4 @@ Each project is imported from its current upstream default branch as a shallow s
 - Imported: **SegMAN** from https://github.com/yunxiangfu2001/SegMAN.git; upstream commit `9ced66ab27f23b0dbc1b0a2fe0ba42e133c55ac8`; license: Apache-2.0
 - Imported: **MCADS-Decoder** from https://github.com/saadwazir/MCADS-Decoder.git; upstream commit `0bb8a7ec97e938db390def9b7e82b6e5766ea33b`; license: GPL-3.0
 - Imported: **UniVAD** from https://github.com/FantasticGNU/UniVAD.git; upstream commit `64d32873dda44fad69786834ea5ee1394ef81975`; license: CC BY-NC-SA 4.0；署名、非商业、相同方式共享
+- Imported: **AA-CLIP** from https://github.com/Mwxinnn/AA-CLIP.git; upstream commit `53db195f230442aa118c246876c94ba1c76139cc`; license: Apache-2.0
