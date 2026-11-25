@@ -23,3 +23,6 @@ Each project is imported from its current upstream default branch as a shallow s
 - Imported: **SearchDet_Long_Tail_Object_Detection** from https://github.com/Mankeerat/SearchDet.git; upstream commit `45d6ce794de647f9622fbcc05097aa1789965b51`; license: MIT
 - Imported: **MambaVision** from https://github.com/NVlabs/MambaVision.git; upstream commit `7860a506b2eb844eaaae676f08461ce8c3c26f43`; license: NVIDIA Source Code License-NC；仅限非商业研究/评估
 - Imported: **MambaOut** from https://github.com/yuweihao/MambaOut.git; upstream commit `9f2f2343eb0f99f2cf3ba6b92290b5a81be2bad1`; license: Apache-2.0
+- Omitted oversized file (>20 MiB): GroupMamba/kernels/selective_scan/build/lib.linux-x86_64-cpython-310/selective_scan_cuda_core.cpython-310-x86_64-linux-gnu.so
+- Omitted oversized file (>20 MiB): GroupMamba/kernels/selective_scan/build/lib.linux-x86_64-cpython-310/selective_scan_cuda_ndstate.cpython-310-x86_64-linux-gnu.so
+- Imported: **GroupMamba** from https://github.com/Amshaker/GroupMamba.git; upstream commit `c1800ed262e995de3c645348e7e0202e8385f334`; license: MIT
